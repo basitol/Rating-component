@@ -5,3 +5,117 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.flex {
+  display: flex;
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+
+  .star {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50px;
+    background-color: hsl(219, 12%, 29%);
+
+    img {
+      padding: 15px;
+    }
+  }
+
+  .head {
+    margin-top: 30px;
+    h1 {
+      color: #fff;
+    }
+
+    p {
+      margin-top: 10px;
+      color: hsl(216, 12%, 54%);
+    }
+  }
+
+  .ratings {
+    .rating {
+      width: 42px;
+      height: 42px;
+      margin-top: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 50px;
+      color: hsl(216, 12%, 54%);
+      background-color: hsl(219, 12%, 29%);
+      transition: ease all 300ms;
+      cursor: pointer;
+
+      &:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: #fff;
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+
+    button {
+      width: 100%;
+      height: 100%;
+
+      color: #fff;
+      background-color: hsl(25, 97%, 53%);
+      letter-spacing: 2px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      transition: ease all 300ms;
+
+      cursor: pointer;
+
+      &:hover {
+        color: hsl(25, 97%, 53%);
+        background-color: #fff;
+      }
+    }
+  }
+}
