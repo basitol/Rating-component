@@ -74,6 +74,14 @@ p {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 450px) {
+  .container,
+  .submit-con {
+    height: 400px;
+    width: 300px;
+  }
+}
+
 .container {
   padding: 30px;
 }
