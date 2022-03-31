@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-<div class="container">
-    <div class="star flex flex-ai-c flex-jc-c">
-        <img src="./images/icon-star.svg" alt="">
-    </div>
-    <div class="head">
-        <h1>
-            How did we do?
-        </h1>
+  </head>
+  <body>
+    <div class="container">
+      <div class="star flex flex-ai-c flex-jc-c">
+        <img src="./images/icon-star.svg" alt="" />
+      </div>
+      <div class="head">
+        <h1>How did we do?</h1>
         <p>
-            Please let us know how we did with your support request. All feedback is appreciated 
-            to help us improve our offering!
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
         </p>
+      </div>
+      <div class="ratings flex flex-jc-sb">
+        <div class="rating" value="1">1</div>
+        <div class="rating" value="2">2</div>
+        <div class="rating" value="3">3</div>
+        <div class="rating" value="4">4</div>
+        <div class="rating" value="5">5</div>
+      </div>
+      <div class="btn">
+        <button class="sub">SUBMIT</button>
+      </div>
     </div>
-    <div class="ratings flex flex-jc-sb">
-        <div class="rating">1</div>
-        <div class="rating">2</div>
-        <div class="rating">3</div>
-        <div class="rating">4</div>
-        <div class="rating">5</div>
+
+    <div class="submit-con hidden">
+      <div class="illustration flex flex-jc-c">
+        <img src="./images/illustration-thank-you.svg" alt="" />
+      </div>
+      <div class="sel">
+        You selected <span class="score">0</span> out 0f 5
+      </div>
+      <div class="texts">
+          <h1>Thank you!</h1>
+          <P>We appreciate you taking the time to give a rating. If you ever need more
+          support, don’t hesitate to get in touch!</P>
+      </div>
+
     </div>
-    <div class="btn">
-        <button>SUBMIT</button>
-    </div>
-</div>
 
-  <!-- You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-</body>
+    <!-- Thank you state end -->
+    <script src="./script.js"></script>
+  </body>
 </html>
